@@ -4,7 +4,11 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            //coment
+            for (int i = 0; i < 4; i++)
+            {
+                Console.WriteLine("the indez is" + i);
+            }
         }
     }
 }
