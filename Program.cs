@@ -4,11 +4,17 @@
     {
         static void Main(string[] args)
         {
-            //comment
-            for (int i = 0; i < 4; i++)
-            {
-                Console.WriteLine("the indez is" + i);
-            }
+            //Ejercicio 2
+
+
+            //Ejercicio 1
+            Console.WriteLine("Ingrese un número entero ");
+           
+            string input = Console.ReadLine();
+            int numero = Int32.Parse(input);
+            Console.WriteLine(numero + 1);
+            
+
         }
     }
 }
