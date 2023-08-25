@@ -3,7 +3,7 @@
     internal class Program
     {
         static void Main(string[] args)
-        {
+              {
 		   //Ejercicio 10
 		            Console.WriteLine("Ingrese el valor de la base del triangulo:");
 		    String entrada = Console.ReadLine();
@@ -27,8 +27,8 @@
             Random aleatorio = new Random();
 		    int resaleatorio = aleatorio.Next(0, 200);
 		    Console.WriteLine("Su número aleatorio es: "+ resaleatorio);   
-		    double porcentaje= ( 1.3 * resaleatorio);
-		    double numaumentado= (resaleatorio+porcentaje);
+		    double porcentaje= ((resaleatorio*30)/100);
+		    double numaumentado= ((resaleatorio+porcentaje));
 		    Console.WriteLine("Su numero aumentado en un 30% es: "+ numaumentado);
 		   
 		Console.WriteLine();
