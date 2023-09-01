@@ -3,16 +3,90 @@
     internal class Program
     {
         static void Main(string[] args)
-        {
-            //Ejercicio 13
-            Console.WriteLine("Ingrese el valor de la tempreatura en grados Celsius");
+         {
+		   //Ejercicio 16:
+		Console.WriteLine("ingrese el numero de hombres:");
+		  string input6 = Console.ReadLine();
+          int hombres = Int32.Parse(input6);
+		
+	    Console.WriteLine("ingrese el numero de mujeres:");
+		  string input7 = Console.ReadLine();
+          int mujeres = Int32.Parse(input7);
+		
+		//cien porciento de hombres y mujeres
+		  int cien = hombres+mujeres;
+		//porcentaje de hombres
+		   float porhombres= (hombres*cien)/100; 
+		   Console.WriteLine("el porcentaje de hombres es del: "+porhombres+" %");
+		//porcentaje de mujeres
+		   float pormujeres= (mujeres*cien)/100;
+		   Console.WriteLine("el porcentaje de mujeres es del: "+pormujeres+" %");
+		
+		Console.WriteLine();
+		
+		
+		   //Ejercicio 15:
+		Console.WriteLine("ingrese el valor numero 1:");
+		  string input4 = Console.ReadLine();
+          int numerova1 = Int32.Parse(input4);
+		
+	    Console.WriteLine("ingrese el valor numero 2:");
+		  string input5 = Console.ReadLine();
+          int numerova2 = Int32.Parse(input5);
+		
+		if (numerova2 != 0){
+		 if(numerova2 % numerova1 == 0){
+			 Console.WriteLine("el "+numerova2+" es divisible por "+ numerova1);			 
+		 }else{
+		  Console.WriteLine("el "+numerova2+" no es divisible por "+ numerova1);}
+		}
+		
+		Console.WriteLine();
+		
+		   //Ejercicio 14:
+		   Console.WriteLine("Ingrese el valor del radio del cilindro:");
+           float radio1;
 
+        while (true)
+        {
+            string entrada5 = Console.ReadLine();
+            radio1 = float.Parse(entrada5);
+
+            if (radio1 >= 0)
+                break;
+
+            Console.WriteLine("Ingrese un dato positivo para el radio :");
+        }
+
+        Console.WriteLine("Ingrese el valor de la altura del cilindro:");
+
+        float Altur2;
+
+        while (true)
+        {
+            string entrada6 = Console.ReadLine();
+            Altur2 = float.Parse(entrada6);
+
+            if (Altur2 >= 0)
+                break;
+
+            Console.WriteLine("ingrese un dato positivo para la altura: ");
+        }
+
+        double volumen1 = Math.PI * Math.Pow(radio1, 2) * Altur2;
+        Console.WriteLine("El volumen del cilindro es: " + volumen1);
+		
+		
+		Console.WriteLine();
+		
+	        //Ejercicio 13
+            Console.WriteLine("Ingrese el valor de la tempreatura en grados Celsius");
 
             String Celsius = Console.ReadLine();
             double cel =  Convert.ToDouble(Celsius);
 
-            //Conversion Celsius a Fahrenheit
-            var nuevecinco = Convert.ToDouble(9 / 5);
+               //Conversion Celsius a Fahrenheit
+            var nuevecinco = Convert.ToDouble(9.0 / 5.0);
             double Fahre = (cel*nuevecinco)+32;
             Console.WriteLine("De Celsius a Fahrenheit es: " + Fahre);
 
@@ -93,4 +167,4 @@
 
         }
     }
-}
+ 
