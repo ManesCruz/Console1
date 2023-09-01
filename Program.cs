@@ -54,12 +54,9 @@
 
             if (radio1 >= 0)
                 break;
-
             Console.WriteLine("Ingrese un dato positivo para el radio :");
         }
-
         Console.WriteLine("Ingrese el valor de la altura del cilindro:");
-
         float Altur2;
 
         while (true)
@@ -69,10 +66,8 @@
 
             if (Altur2 >= 0)
                 break;
-
             Console.WriteLine("ingrese un dato positivo para la altura: ");
         }
-
         double volumen1 = Math.PI * Math.Pow(radio1, 2) * Altur2;
         Console.WriteLine("El volumen del cilindro es: " + volumen1);
 		
