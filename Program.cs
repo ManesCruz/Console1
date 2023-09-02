@@ -75,7 +75,7 @@
 		Console.WriteLine();
 		
 	        //Ejercicio 13
-            Console.WriteLine("Ingrese el valor de la tempreatura en grados Celsius");
+            Console.WriteLine("Ingrese el valor de la tempreatura en grados Celsius: ");
 
             String Celsius = Console.ReadLine();
             double cel =  Convert.ToDouble(Celsius);
