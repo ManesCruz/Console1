@@ -5,111 +5,142 @@
         static void Main(string[] args)
          {
 
-            //Ejercicio 18:
-
-
-            //Ejercicio 17:
-            Console.WriteLine("ingrese el numero a evaluar ");
-            string input8 = Console.ReadLine();
-            int? ponenu = Int32.Parse(input8);
-
-            if (ponenu > 0)
-            {
-                Console.WriteLine("El numero ingresado " + ponenu + " es un numero positivo.");
+           //Ejercicio 20:
+		 Console.WriteLine("cual fue el resultado de ruleta ");
+		  string input12 = Console.ReadLine();
+          int resul = Int32.Parse(input12);
+		if(resul>=0 && resul<12){
+		Console.WriteLine("el resultado se encuentra en la primera docena ");
+		}
+		if(resul>=12 && resul<24){
+		Console.WriteLine("el resultado se encuentra en la segunda docena ");
+		}
+		if(resul>=24 && resul<36){
+		Console.WriteLine("el resultado se encuentra en la tercera docena ");
+		}
+		
+		
+	 //Ejercicio 19:	
+		          Console.WriteLine("ingrese el valor del lado 1 ");
+		  string input9 = Console.ReadLine();
+          float lado1 = float.Parse(input9);
+				  Console.WriteLine("ingrese el valor del lado 2 ");
+		  string input10 = Console.ReadLine();
+          float lado2 = float.Parse(input10); 
+				  Console.WriteLine("ingrese el valor del lado 3 ");
+		  string input11 = Console.ReadLine();
+          float lado3 = float.Parse(input11); 
+		
+		if (lado1 != lado2 && lado2 != lado3){
+		Console.WriteLine("Es un triangulo Escaleno");
+		}
+		if ((lado1 == lado2 && lado2 != lado3)||(lado1 == lado3 && lado3 != lado2)||(lado2 == lado3 && lado3 != lado1)){
+		Console.WriteLine("Es un triangulo Isosceles");
+		}
+		if(lado1 == lado2 && lado2 == lado3){
+		Console.WriteLine("Es un triangulo Equilatero");
+		}
+		
+		Console.WriteLine();
+		
+		
+	 //Ejercicio 18:
+	
+		
+	 //Ejercicio 17:
+        Console.WriteLine("ingrese el numero a evaluar ");
+		  string input8 = Console.ReadLine();
+          int? ponenu = Int32.Parse(input8); 
+		
+            if(ponenu > 0){
+                Console.WriteLine("El numero ingresado "+ponenu+" es un numero positivo.");
+			}
+            if (ponenu < 0) {
+                Console.WriteLine("El numero ingresado "+ponenu+" es un numero negativo.");
             }
-            if (ponenu < 0)
-            {
-                Console.WriteLine("El numero ingresado " + ponenu + " es un numero negativo.");
-            }
-            if (ponenu == null)
-            {
-                Console.WriteLine("El numero ingresado " + ponenu + " es un numero nulo.");
-            }
+		    if(ponenu == null){
+			     Console.WriteLine("El numero ingresado "+ponenu+" es un numero nulo.");
+		    }
+        
+      //Ejercicio 16:
+		Console.WriteLine("ingrese el numero de hombres:");
+		  string input6 = Console.ReadLine();
+          int hombres = Int32.Parse(input6);
+		
+	    Console.WriteLine("ingrese el numero de mujeres:");
+		  string input7 = Console.ReadLine();
+          int mujeres = Int32.Parse(input7);
+		
+		//cien porciento de hombres y mujeres
+		  int cien = hombres+mujeres;
+		//porcentaje de hombres
+		   float porhombres= (hombres*cien)/100; 
+		   Console.WriteLine("el porcentaje de hombres es del: "+porhombres+" %");
+		//porcentaje de mujeres
+		   float pormujeres= (mujeres*cien)/100;
+		   Console.WriteLine("el porcentaje de mujeres es del: "+pormujeres+" %");
+		
+		Console.WriteLine();
+		
+		
+		   //Ejercicio 15:
+		Console.WriteLine("ingrese el valor numero 1:");
+		  string input4 = Console.ReadLine();
+          int numerova1 = Int32.Parse(input4);
+		
+	    Console.WriteLine("ingrese el valor numero 2:");
+		  string input5 = Console.ReadLine();
+          int numerova2 = Int32.Parse(input5);
+		
+		if (numerova2 != 0){
+		 if(numerova2 % numerova1 == 0){
+			 Console.WriteLine("el "+numerova2+" es divisible por "+ numerova1);			 
+		 }else{
+		  Console.WriteLine("el "+numerova2+" no es divisible por "+ numerova1);}
+		}
+		
+		Console.WriteLine();
+		
+		   //Ejercicio 14:
+		   Console.WriteLine("Ingrese el valor del radio del cilindro:");
+           float radio1;
 
-            //Ejercicio 16:
-            Console.WriteLine("ingrese el numero de hombres:");
-            string input6 = Console.ReadLine();
-            int hombres = Int32.Parse(input6);
+        while (true)
+        {
+            string entrada5 = Console.ReadLine();
+            radio1 = float.Parse(entrada5);
 
-            Console.WriteLine("ingrese el numero de mujeres:");
-            string input7 = Console.ReadLine();
-            int mujeres = Int32.Parse(input7);
+            if (radio1 >= 0)
+                break;
+            Console.WriteLine("Ingrese un dato positivo para el radio :");
+        }
+        Console.WriteLine("Ingrese el valor de la altura del cilindro:");
+        float Altur2;
 
-            //cien porciento de hombres y mujeres
-            int cien = hombres + mujeres;
-            //porcentaje de hombres
-            float porhombres = (hombres * cien) / 100;
-            Console.WriteLine("el porcentaje de hombres es del: " + porhombres + " %");
-            //porcentaje de mujeres
-            float pormujeres = (mujeres * cien) / 100;
-            Console.WriteLine("el porcentaje de mujeres es del: " + pormujeres + " %");
+        while (true)
+        {
+            string entrada6 = Console.ReadLine();
+            Altur2 = float.Parse(entrada6);
 
-            Console.WriteLine();
-
-
-            //Ejercicio 15:
-            Console.WriteLine("ingrese el valor numero 1:");
-            string input4 = Console.ReadLine();
-            int numerova1 = Int32.Parse(input4);
-
-            Console.WriteLine("ingrese el valor numero 2:");
-            string input5 = Console.ReadLine();
-            int numerova2 = Int32.Parse(input5);
-
-            if (numerova2 != 0)
-            {
-                if (numerova2 % numerova1 == 0)
-                {
-                    Console.WriteLine("el " + numerova2 + " es divisible por " + numerova1);
-                }
-                else
-                {
-                    Console.WriteLine("el " + numerova2 + " no es divisible por " + numerova1);
-                }
-            }
-
-            Console.WriteLine();
-
-            //Ejercicio 14:
-            Console.WriteLine("Ingrese el valor del radio del cilindro:");
-            float radio1;
-
-            while (true)
-            {
-                string entrada5 = Console.ReadLine();
-                radio1 = float.Parse(entrada5);
-
-                if (radio1 >= 0)
-                    break;
-                Console.WriteLine("Ingrese un dato positivo para el radio :");
-            }
-            Console.WriteLine("Ingrese el valor de la altura del cilindro:");
-            float Altur2;
-
-            while (true)
-            {
-                string entrada6 = Console.ReadLine();
-                Altur2 = float.Parse(entrada6);
-
-                if (Altur2 >= 0)
-                    break;
-                Console.WriteLine("ingrese un dato positivo para la altura: ");
-            }
-            double volumen1 = Math.PI * Math.Pow(radio1, 2) * Altur2;
-            Console.WriteLine("El volumen del cilindro es: " + volumen1);
-
-
-            Console.WriteLine();
-
-            //Ejercicio 13
+            if (Altur2 >= 0)
+                break;
+            Console.WriteLine("ingrese un dato positivo para la altura: ");
+        }
+        double volumen1 = Math.PI * Math.Pow(radio1, 2) * Altur2;
+        Console.WriteLine("El volumen del cilindro es: " + volumen1);
+		
+		
+		Console.WriteLine();
+		
+	        //Ejercicio 13
             Console.WriteLine("Ingrese el valor de la tempreatura en grados Celsius: ");
 
             String Celsius = Console.ReadLine();
-            double cel = Convert.ToDouble(Celsius);
+            double cel =  Convert.ToDouble(Celsius);
 
-            //Conversion Celsius a Fahrenheit
+               //Conversion Celsius a Fahrenheit
             var nuevecinco = Convert.ToDouble(9.0 / 5.0);
-            double Fahre = (cel * nuevecinco) + 32;
+            double Fahre = (cel*nuevecinco)+32;
             Console.WriteLine("De Celsius a Fahrenheit es: " + Fahre);
 
             Console.WriteLine();
@@ -120,8 +151,8 @@
             double cen = float.Parse(centimetros);
 
             //Centimetros a yardas
-            double yardas = cen / 91.44;
-            Console.WriteLine("De centimetros a yardas es: " + yardas);
+            double yardas= cen / 91.44;
+            Console.WriteLine("De centimetros a yardas es: "+ yardas);
             //Centimetros a metros
             double metros = cen / 100;
             Console.WriteLine("De centimetros a metros es: " + metros);
@@ -143,7 +174,7 @@
             Console.WriteLine("Ingrese el valor de la altura del cilindro");
             String entrada4 = Console.ReadLine();
             float Altur = float.Parse(entrada4);
-            double volumen = Math.PI * (Math.Pow(radio, 2)) * Altur;
+            double volumen = Math.PI * (Math.Pow(radio,2)) * Altur;
             Console.WriteLine("El volumen del cilindro es de: " + volumen);
 
             Console.WriteLine();
@@ -161,7 +192,7 @@
             float Area = ((Base * Altura) / 2);
             Console.WriteLine("El area del triangulo es: " + Area);
             //Perimetro
-            double Perimetro = ((Math.Sqrt((Math.Pow(Base, 2)) + (Math.Pow(Altura, 2)))) + Base + Altura);
+            double Perimetro = ((Math.Sqrt((Math.Pow(Base,2)) + (Math.Pow(Altura,2)))) + Base + Altura);
             Console.WriteLine("El perimetro del triangulo es: " + Perimetro);
 
             Console.WriteLine();
