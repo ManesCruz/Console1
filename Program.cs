@@ -4,8 +4,8 @@
     {
         static void Main(string[] args)
          {
-
-        //Ejercicio 20:
+  
+		//Ejercicio 20:
 		 Console.WriteLine("cual fue el resultado de ruleta ");
 		  string input12 = Console.ReadLine();
           int resul = Int32.Parse(input12);
@@ -22,7 +22,8 @@
 		Console.WriteLine();
 		
 		
-	 //Ejercicio 19:	
+  
+		//Ejercicio 19:	
 		          Console.WriteLine("ingrese el valor del lado 1 ");
 		  string input9 = Console.ReadLine();
           float lado1 = float.Parse(input9);
@@ -46,7 +47,8 @@
 		Console.WriteLine();
 		
 		
-	 //Ejercicio 18:
+     
+		//Ejercicio 18:
 	              Console.WriteLine("ingrese el numero 1 ");
 		  string input14 = Console.ReadLine();
           float numero1 = float.Parse(input14);
@@ -68,7 +70,8 @@
 		
 		Console.WriteLine();
 		
-	 //Ejercicio 17:
+     
+		//Ejercicio 17:
         Console.WriteLine("ingrese el numero a evaluar ");
 		  string input8 = Console.ReadLine();
           int? ponenu = Int32.Parse(input8); 
@@ -85,7 +88,8 @@
 
 		Console.WriteLine();
 		
-      //Ejercicio 16:
+      
+		//Ejercicio 16:
 		Console.WriteLine("ingrese el numero de hombres:");
 		  string input6 = Console.ReadLine();
           int hombres = Int32.Parse(input6);
@@ -106,7 +110,8 @@
 		Console.WriteLine();
 		
 		
-		   //Ejercicio 15:
+	 
+		//Ejercicio 15:
 		Console.WriteLine("ingrese el valor numero 1:");
 		  string input4 = Console.ReadLine();
           int numerova1 = Int32.Parse(input4);
@@ -155,7 +160,8 @@
 		
 		Console.WriteLine();
 		
-	        //Ejercicio 13
+            
+		//Ejercicio 13
             Console.WriteLine("Ingrese el valor de la tempreatura en grados Celsius: ");
 
             String Celsius = Console.ReadLine();
@@ -168,7 +174,8 @@
 
             Console.WriteLine();
 
-            //Ejercicio 12
+            
+		//Ejercicio 12
             Console.WriteLine("Ingrese el valor de la medida en centimetros");
             String centimetros = Console.ReadLine();
             double cen = float.Parse(centimetros);
@@ -190,7 +197,8 @@
 
 
 
-            //Ejercicio 11
+            
+		//Ejercicio 11
             Console.WriteLine("Ingrese el valor del radio del cilindro:");
             String entrada3 = Console.ReadLine();
             float radio = float.Parse(entrada3);
@@ -202,7 +210,8 @@
 
             Console.WriteLine();
 
-            //Ejercicio 10
+            
+		//Ejercicio 10
             Console.WriteLine("Ingrese el valor de la base del triangulo:");
             String entrada = Console.ReadLine();
             float Base = float.Parse(entrada);
@@ -221,7 +230,8 @@
             Console.WriteLine();
 
 
-            //Ejercicio 6
+            
+		//Ejercicio 6
             Random aleatorio = new Random();
             float resaleatorio = aleatorio.Next(0, 200);
             Console.WriteLine("Su número aleatorio es: " + resaleatorio);
@@ -232,7 +242,8 @@
             Console.WriteLine();
 
 
-            //Ejercicio 5
+            
+		//Ejercicio 5
             Console.WriteLine("Ingrese un número entero ");
 
             string input = Console.ReadLine();
