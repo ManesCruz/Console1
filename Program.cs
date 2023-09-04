@@ -5,7 +5,7 @@
         static void Main(string[] args)
          {
 
-          		 //Ejercicio 20:
+        //Ejercicio 20:
 		 Console.WriteLine("cual fue el resultado de ruleta ");
 		  string input12 = Console.ReadLine();
           int resul = Int32.Parse(input12);
@@ -82,7 +82,9 @@
 		    if(ponenu == null){
 			     Console.WriteLine("El numero ingresado "+ponenu+" es un numero nulo.");
 		    }
-        
+
+		Console.WriteLine();
+		
       //Ejercicio 16:
 		Console.WriteLine("ingrese el numero de hombres:");
 		  string input6 = Console.ReadLine();
