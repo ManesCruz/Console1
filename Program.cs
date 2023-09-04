@@ -5,7 +5,7 @@
         static void Main(string[] args)
          {
 
-           //Ejercicio 20:
+          		 //Ejercicio 20:
 		 Console.WriteLine("cual fue el resultado de ruleta ");
 		  string input12 = Console.ReadLine();
           int resul = Int32.Parse(input12);
@@ -18,6 +18,8 @@
 		if(resul>=24 && resul<36){
 		Console.WriteLine("el resultado se encuentra en la tercera docena ");
 		}
+		
+		Console.WriteLine();
 		
 		
 	 //Ejercicio 19:	
@@ -45,7 +47,26 @@
 		
 		
 	 //Ejercicio 18:
-	
+	              Console.WriteLine("ingrese el numero 1 ");
+		  string input14 = Console.ReadLine();
+          float numero1 = float.Parse(input14);
+				  Console.WriteLine("ingrese el numero 2");
+		  string input15 = Console.ReadLine();
+          float numero2 = float.Parse(input15); 
+				  Console.WriteLine("ingrese el numero 3 ");
+		  string input16 = Console.ReadLine();
+          float numero3 = float.Parse(input16); 
+		 if (numero1 > numero2 && numero1 > numero3){
+			Console.WriteLine("el numero "+ numero1 +" es el mayor"); 
+		 }		 
+		if (numero2 > numero1 && numero2 > numero3){
+			Console.WriteLine("el numero "+ numero2 +" es el mayor"); 
+		 }		
+		if (numero3 > numero2 && numero3 > numero1){
+			Console.WriteLine("el numero "+ numero3 +" es el mayor"); 
+		 }
+		
+		Console.WriteLine();
 		
 	 //Ejercicio 17:
         Console.WriteLine("ingrese el numero a evaluar ");
